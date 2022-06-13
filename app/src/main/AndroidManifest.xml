@@ -3,6 +3,7 @@
     package="com.moveitech.dealerpay">
 
     <application
+        android:name=".application.DealerPayApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

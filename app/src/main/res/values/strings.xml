@@ -8,4 +8,7 @@
     <string name="completed">Completed</string>
     <string name="amount">$648</string>
     <string name="user_name">Bessie</string>
+    <string name="pay">Pay</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
 </resources>
