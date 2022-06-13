@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/fragment_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/app_logo.xml" value="0.1525" />
+        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/ic_app_logo.xml" value="0.1525" />
+        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/ic_baseline_alternate_email_24.xml" value="0.1395" />
+        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/progress_dialog_layout.xml" value="0.17074275362318841" />
       </map>
     </option>
