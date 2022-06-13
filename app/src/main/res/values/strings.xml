@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Dealer Pay</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all">All</string>
+    <string name="in_progress">In Progress</string>
+    <string name="requested">Requested</string>
+    <string name="completed">Completed</string>
+    <string name="amount">$648</string>
+    <string name="user_name">Bessie</string>
 </resources>
