@@ -32,4 +32,7 @@
     <string name="send_via">Send Via</string>
     <string name="next">Next</string>
     <string name="phone">Phone</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="card_payment">Card Payment</string>
+    <string name="payment_request">Payment Request</string>
 </resources>
