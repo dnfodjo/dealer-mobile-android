@@ -31,4 +31,5 @@
     <string name="enter_pay_share_amount">Enter Pay Share Amount</string>
     <string name="send_via">Send Via</string>
     <string name="next">Next</string>
+    <string name="phone">Phone</string>
 </resources>
