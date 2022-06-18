@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
+import com.moveitech.dealerpay.MainActivity
 import com.moveitech.dealerpay.util.DialogUtils
 import com.moveitech.dealerpay.util.safeNavigate
 import com.moveitech.dealerpay.util.showSnackBar
@@ -41,13 +42,12 @@ abstract class BaseFragment <T: ViewBinding>:Fragment() {
 
 
 
-    abstract fun setDefaultUi()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         initViews()
-        setDefaultUi()
         liveDataObserver()
+        btnListener()
     }
 
     abstract fun  liveDataObserver()
@@ -82,5 +82,10 @@ abstract class BaseFragment <T: ViewBinding>:Fragment() {
     protected fun moveToNextScreen(navDirections: NavDirections)
     {
          findNavController().safeNavigate(navDirections)
+    }
+
+    protected fun setDefaultUi(showToolbar: Boolean = true,showNavigationDrawer:Boolean=true) {
+
+        (requireActivity() as MainActivity).setDefaultUi(showToolbar,showNavigationDrawer)
     }
 }

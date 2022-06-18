@@ -9,5 +9,18 @@
         android:id="@+id/loginFragment"
         android:name="com.moveitech.dealerpay.ui.authentication.LoginFragment"
         android:label="LoginFragment"
-        tools:layout="@layout/fragment_login"/>
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.moveitech.dealerpay.ui.HomeFragment"
+        android:label="@string/transaction_history"
+        tools:layout="@layout/fragment_home" />
 </navigation>
