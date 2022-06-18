@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -32,7 +31,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:fontFamily="@font/SFProText_Regular"
+                    android:fontFamily="@font/sfprotext_regular"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:background="@drawable/textview_bg"
                     android:text="@string/user_name"
@@ -48,7 +47,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:fontFamily="@font/SFProText_Regular"
+                    android:fontFamily="@font/sfprotext_regular"
                     android:text="@string/amount"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:textColor="@color/yellow"
@@ -82,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
-                    android:fontFamily="@font/SFProText_Regular"
+                    android:fontFamily="@font/sfprotext_regular"
                     android:text="7 June 2022 at 3:20 PM"
                     android:textColor="@color/white"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -94,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@font/SFProText_Regular"
+                    android:fontFamily="@font/sfprotext_regular"
                     android:text="Mastercard 2145"
                     android:textColor="@color/white"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -104,13 +103,11 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_12sdp"
                     android:src="@drawable/ic_credit_card"
                     app:layout_constraintBottom_toBottomOf="@+id/tv_masterCard"
                     app:layout_constraintEnd_toEndOf="@+id/imageView"
                     app:layout_constraintStart_toStartOf="@+id/imageView"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
-                    app:layout_constraintTop_toTopOf="" />
+                    app:layout_constraintTop_toTopOf="@+id/tv_masterCard" />
 
 
                 <com.google.android.material.button.MaterialButton

@@ -11,4 +11,24 @@
     <string name="pay">Pay</string>
     <string name="e_mail">E-mail</string>
     <string name="password">Password</string>
+    <string name="account_setings">Account Setings</string>
+    <string name="departement">Department</string>
+    <string name="transaction">Transactions</string>
+    <string name="options">Options</string>
+    <string name="pay_amount">Pay Amount</string>
+    <string name="sale_amount">Sale Amount</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="address_one">Address 1</string>
+    <string name="address_two">Address 2</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="process_scale">Process Scale</string>
+    <string name="mail_address">Email Address</string>
+    <string name="send_request">Send Request</string>
+    <string name="enter_sale_amount">Enter Sale Amount</string>
+    <string name="enter_pay_share_amount">Enter Pay Share Amount</string>
+    <string name="send_via">Send Via</string>
+    <string name="next">Next</string>
 </resources>

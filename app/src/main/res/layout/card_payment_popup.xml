@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_image"
     tools:context=".CardPaymentFragment">
 
@@ -13,26 +13,27 @@
         android:layout_height="match_parent"
 
         >
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
             >
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:backgroundTint="@color/green"
                 android:padding="10dp"
                 android:text="Next"
                 android:textColor="@color/white"
                 app:cornerRadius="20dp"
-                android:layout_marginTop="@dimen/_15sdp"
-                app:layout_constraintTop_toBottomOf="@id/rectangle_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                />
+                app:layout_constraintTop_toBottomOf="@id/rectangle_4" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/department_layout"
@@ -63,54 +64,22 @@
                     android:id="@+id/et_select_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="Select an Item"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/transaction_type_text_layout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginTop="39dp"
-                android:hint="@string/transaction"
-                android:textColorHint="@color/green"
-                app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
-                app:boxCornerRadiusBottomStart="@dimen/_20sdp"
-                app:boxCornerRadiusTopEnd="@dimen/_20sdp"
-                app:boxCornerRadiusTopStart="@dimen/_20sdp"
-                app:boxStrokeColor="@color/outer_line"
-                app:endIconDrawable="@drawable/ic_baseline_keyboard_arrow_down_24"
-                app:endIconMode="custom"
-                app:endIconTint="@color/green"
-                app:expandedHintEnabled="true"
-                app:hintEnabled="true"
-                app:hintTextColor="@color/green"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/department_layout"
-                >
 
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_transaction_type"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:textColor="@color/white" />
-
-            </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/options_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
-                android:layout_marginTop="39dp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:hint="@string/options"
                 android:textColorHint="@color/green"
                 app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
@@ -126,17 +95,18 @@
                 app:hintTextColor="@color/green"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/transaction_type_text_layout"
-                >
+                app:layout_constraintTop_toBottomOf="@+id/department_layout">
 
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_options_type"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="An Item has been Selected"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -166,18 +136,17 @@
                         android:id="@+id/et_saleAmount"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_36sdp"
-                        android:textColorHint="@color/white"
-                        android:paddingStart="@dimen/_4sdp"
-                        android:fontFamily="@font/sfprotext_regular"
-                        android:background="@drawable/edit_text_bg"
                         android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_14sdp"
                         android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/sfprotext_regular"
+                        android:hint="@string/sale_amount"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:textColorHint="@color/white"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        android:hint="@string/sale_amount"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginTop="@dimen/_14sdp"
-                        />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
                         android:id="@+id/pay_shareAmount"
@@ -185,9 +154,9 @@
                         android:layout_height="@dimen/_36sdp"
                         android:layout_marginTop="@dimen/_11sdp"
                         android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/sfprotext_regular"
                         android:hint="@string/pay_amount"
                         android:paddingStart="@dimen/_4sdp"
-                        android:fontFamily="@font/sfprotext_regular"
                         android:textColorHint="@color/white"
                         app:layout_constraintEnd_toEndOf="@+id/et_saleAmount"
                         app:layout_constraintStart_toStartOf="@+id/et_saleAmount"
@@ -232,23 +201,24 @@
                         android:id="@+id/tv_sale_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_12sdp"
                         android:fontFamily="@font/sfprotext_regular"
                         android:text="$10,000000"
                         android:textColor="@color/white"
                         android:textSize="14sp"
-                        android:layout_marginRight="@dimen/_12sdp"
                         app:layout_constraintBottom_toTopOf="@+id/textView4"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/textView3" />
+
                     <TextView
                         android:id="@+id/tv_share_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_12sdp"
                         android:fontFamily="@font/sfprotext_regular"
                         android:text="$10,000000"
                         android:textColor="@color/white"
                         android:textSize="14sp"
-                        android:layout_marginRight="@dimen/_12sdp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView4"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -257,9 +227,9 @@
                         android:id="@+id/btn_total_amount"
                         android:layout_width="@dimen/_200sdp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="40dp"
                         android:layout_marginHorizontal="16dp"
                         android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="40dp"
                         android:backgroundTint="#203031"
                         android:padding="10dp"
                         android:text="Total Amount :$20,00000"
@@ -274,14 +244,20 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/department_layout"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="button1,button2"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
     </androidx.core.widget.NestedScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

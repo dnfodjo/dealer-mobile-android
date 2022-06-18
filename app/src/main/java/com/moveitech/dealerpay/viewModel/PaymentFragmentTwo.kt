@@ -1,22 +1,23 @@
-package com.moveitech.dealerpay
+package com.moveitech.dealerpay.viewModel
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.moveitech.dealerpay.databinding.FragmentCardPaymentBinding
+import com.moveitech.dealerpay.R
 import com.moveitech.dealerpay.databinding.FragmentLoginBinding
+import com.moveitech.dealerpay.databinding.FragmentPaymentTwoBinding
 import com.moveitech.dealerpay.ui.BaseFragment
 
-class CardPaymentFragment : BaseFragment<FragmentCardPaymentBinding>() {
+class PaymentFragmentTwo : BaseFragment<FragmentPaymentTwoBinding>() {
     override fun initViews() {
     }
 
     override fun getFragmentBinding(
         layoutInflater: LayoutInflater,
         container: ViewGroup?
-    ) = FragmentCardPaymentBinding.inflate(layoutInflater, container, false)
+    ) = FragmentPaymentTwoBinding.inflate(layoutInflater, container, false)
 
     override fun setDefaultUi() {
     }

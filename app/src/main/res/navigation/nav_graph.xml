@@ -9,5 +9,38 @@
         android:id="@+id/loginFragment"
         android:name="com.moveitech.dealerpay.ui.authentication.LoginFragment"
         android:label="LoginFragment"
-        tools:layout="@layout/fragment_login"/>
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.moveitech.dealerpay.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_cardPaymentFragment"
+            app:destination="@id/cardPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardPaymentFragment"
+        android:name="com.moveitech.dealerpay.CardPaymentFragment"
+        android:label="card_payment_popup"
+        tools:layout="@layout/card_payment_popup" />
+    <fragment
+        android:id="@+id/paymentRequestOne"
+        android:name="com.moveitech.dealerpay.ui.PaymentRequestOne"
+        android:label="fragment_payment_request_one"
+        tools:layout="@layout/fragment_payment_request_one" />
+    <fragment
+        android:id="@+id/paymentFragmentTwo"
+        android:name="com.moveitech.dealerpay.viewModel.PaymentFragmentTwo"
+        android:label="fragment_paymen_request_two"
+        tools:layout="@layout/fragment_paymen_request_two" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.moveitech.dealerpay.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
