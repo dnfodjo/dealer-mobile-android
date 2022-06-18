@@ -32,6 +32,7 @@
 
                 >
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile"
                     android:layout_width="@dimen/_36sdp"
                     android:layout_height="@dimen/_36sdp"
                     android:src="@drawable/profile_image_placeholder"
@@ -67,6 +68,6 @@
         app:headerLayout="@layout/navigation_drawer_header"
         style="@style/Widget.Custom.NavigationView"
         app:menu="@menu/nav_drawer_menu"
-        android:background="@drawable/union"
+        android:background="@drawable/nav_drawer_bg"
         />
 </androidx.drawerlayout.widget.DrawerLayout>

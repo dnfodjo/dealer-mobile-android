@@ -1,17 +1,17 @@
 package com.moveitech.dealerpay
 
-import android.graphics.Bitmap
-import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
-import android.view.ViewGroup
+import android.view.Gravity
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupWithNavController
-import com.google.android.material.navigation.NavigationView
 import com.moveitech.dealerpay.databinding.ActivityMainBinding
+import com.moveitech.dealerpay.databinding.NavigationDrawerHeaderBinding
 import com.moveitech.dealerpay.util.gone
 import com.moveitech.dealerpay.util.visible
 import dagger.hilt.android.AndroidEntryPoint
@@ -20,6 +20,8 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+    lateinit var navController: NavController
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -27,64 +29,80 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         setUpNavigation()
+        setupNavigationDrawerHeader()
+    }
 
+    private fun setupNavigationDrawerHeader() {
+        val headerView: View = binding.navView.getHeaderView(0)
+        val headerBinding: NavigationDrawerHeaderBinding =
+            NavigationDrawerHeaderBinding.bind(headerView)
 
-        drawerListener()
-
-
+        headerBinding.parentLayout.setOnClickListener {
+            navController.navigate(R.id.settingsFragment)
+        }
     }
 
 
     private fun setUpNavigation() {
 
-        binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
         val navHostFragment =
             (supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment?)!!
-        val navController = navHostFragment.navController
+        navController = navHostFragment.navController
         val appBarConfiguration: AppBarConfiguration =
-            AppBarConfiguration.Builder(R.id.homeFragment)
+            AppBarConfiguration.Builder(
+                R.id.homeFragment,
+                R.id.cardPaymentFragment,
+                R.id.paymentRequestOne
+            )
                 .setOpenableLayout(binding.drawerLayout)
                 .build()
         setupWithNavController(binding.navView, navController)
         setupWithNavController(binding.toolbar, navController, appBarConfiguration)
 
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
-
-            if (destination.id == R.id.homeFragment) {
-                binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
-
+            when (destination.id) {
+                R.id.homeFragment -> {
+                    binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
+                }
+                R.id.cardPaymentFragment -> {
+                    binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
+                }
+                R.id.paymentRequestOne -> {
+                    binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
+                }
+                R.id.cardPaymentFragmentTwo -> {
+                    binding.toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24)
+                }
+                R.id.paymentReqTwoFragment -> {
+                    binding.toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24)
+                }
+                R.id.settingsFragment -> {
+                    binding.toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24)
+                    binding.drawerLayout.closeDrawer(Gravity.LEFT, true)
+                }
             }
         }
-
-
     }
 
 
-    private fun drawerListener() {
-        binding.navView.setNavigationItemSelectedListener {
-
-            if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-
-//                blur()
-            }
-
-            false
-        }
-    }
-
-    fun setDefaultUi(showToolbar: Boolean, showNavigationDrawer: Boolean) {
+    fun setDefaultUi(showToolbar: Boolean, showNavigationDrawer: Boolean, showProfilePic: Boolean) {
         if (showNavigationDrawer) {
             binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
-
         } else {
             binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-
         }
         if (showToolbar) {
             supportActionBar?.show()
         } else {
             supportActionBar?.hide()
         }
-
+        if (showProfilePic) {
+            binding.ivProfile.visible()
+        } else {
+            binding.ivProfile.gone()
+        }
     }
+
+
+
 }

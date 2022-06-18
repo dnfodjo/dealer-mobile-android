@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.moveitech.dealerpay.adapter.TransactionAdapter
 import com.moveitech.dealerpay.databinding.FragmentHomeBinding
-import com.moveitech.dealerpay.databinding.HomeCardsBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

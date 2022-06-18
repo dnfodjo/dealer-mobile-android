@@ -84,8 +84,8 @@ abstract class BaseFragment <T: ViewBinding>:Fragment() {
          findNavController().safeNavigate(navDirections)
     }
 
-    protected fun setDefaultUi(showToolbar: Boolean = true,showNavigationDrawer:Boolean=true) {
+    protected fun setDefaultUi(showToolbar: Boolean = true,showNavigationDrawer:Boolean=true,showProfilePic:Boolean=false) {
 
-        (requireActivity() as MainActivity).setDefaultUi(showToolbar,showNavigationDrawer)
+        (requireActivity() as MainActivity).setDefaultUi(showToolbar,showNavigationDrawer,showProfilePic)
     }
 }

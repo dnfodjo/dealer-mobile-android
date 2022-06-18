@@ -57,6 +57,13 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
     }
 
 
+    override fun onDestroy() {
+        super.onDestroy()
+        with(viewModel)
+        {
+            loginResponse.value=null
+        }
+    }
 
     override fun btnListener() {
 
@@ -72,5 +79,6 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
             binding.passwordTextLayout.error = null
         }
     }
+
 
 }
