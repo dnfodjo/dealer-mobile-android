@@ -11,9 +11,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     override fun initViews() {
-
-        setDefaultUi()
         setupRecyclerView()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setDefaultUi(true, showNavigationDrawer = true, showProfilePic = true)
     }
 
     private fun setupRecyclerView() {

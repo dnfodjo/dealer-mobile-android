@@ -88,4 +88,9 @@ abstract class BaseFragment <T: ViewBinding>:Fragment() {
 
         (requireActivity() as MainActivity).setDefaultUi(showToolbar,showNavigationDrawer,showProfilePic)
     }
+
+    protected fun onBackPressed()
+    {
+        requireActivity().onBackPressed();
+    }
 }

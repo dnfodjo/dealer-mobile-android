@@ -1,7 +1,8 @@
 package com.moveitech.dealerpay
 
-import android.os.Bundle
+import  android.os.Bundle
 import android.view.Gravity
+import android.view.Menu
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -30,6 +31,14 @@ class MainActivity : AppCompatActivity() {
 
         setUpNavigation()
         setupNavigationDrawerHeader()
+        btnListener()
+    }
+
+    private fun btnListener() {
+
+        binding.ivProfile.setOnClickListener {
+            navController.navigate(R.id.settingsFragment)
+        }
     }
 
     private fun setupNavigationDrawerHeader() {
@@ -41,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             navController.navigate(R.id.settingsFragment)
         }
     }
+
 
 
     private fun setUpNavigation() {
@@ -61,8 +71,16 @@ class MainActivity : AppCompatActivity() {
 
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             when (destination.id) {
+
                 R.id.homeFragment -> {
                     binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
+                }
+                R.id.loginFragment -> {
+                    val backStackCount= supportFragmentManager.backStackEntryCount
+                    if (backStackCount>0)
+                    {
+                        navController.popBackStack()
+                    }
                 }
                 R.id.cardPaymentFragment -> {
                     binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
@@ -100,6 +118,15 @@ class MainActivity : AppCompatActivity() {
             binding.ivProfile.visible()
         } else {
             binding.ivProfile.gone()
+        }
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        if (navController.currentDestination?.id ?:0 == R.id.cardPaymentFragment)
+        {
+            supportFragmentManager.popBackStack()
         }
     }
 

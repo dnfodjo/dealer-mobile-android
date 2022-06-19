@@ -48,7 +48,9 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
             loginResponse.observe(viewLifecycleOwner){
                 if (it)
                 {
+                    loginResponse.value=false
                     moveToNextScreen(LoginFragmentDirections.actionLoginFragmentToHomeFragment())
+
                 }
             }
 
@@ -57,13 +59,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
     }
 
 
-    override fun onDestroy() {
-        super.onDestroy()
-        with(viewModel)
-        {
-            loginResponse.value=null
-        }
-    }
+
 
     override fun btnListener() {
 
