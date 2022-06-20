@@ -2,12 +2,11 @@ package com.moveitech.dealerpay
 
 import  android.os.Bundle
 import android.view.Gravity
-import android.view.Menu
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupWithNavController
@@ -74,14 +73,11 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.homeFragment -> {
                     binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
+
                 }
-                R.id.loginFragment -> {
-                    val backStackCount= supportFragmentManager.backStackEntryCount
-                    if (backStackCount>0)
-                    {
-                        navController.popBackStack()
-                    }
-                }
+//                R.id.loginFragment -> {
+//
+//                }
                 R.id.cardPaymentFragment -> {
                     binding.toolbar.setNavigationIcon(R.drawable.ic_humburger_icon)
                 }
@@ -122,12 +118,30 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+
     override fun onBackPressed() {
         super.onBackPressed()
-        if (navController.currentDestination?.id ?:0 == R.id.cardPaymentFragment)
-        {
-            supportFragmentManager.popBackStack()
+
+    }
+
+    private fun manageBackStack()
+    {
+        val navOptions: NavOptions = NavOptions.Builder()
+            .setPopUpTo(R.id.homeFragment, true)
+            .build()
+        when {
+            navController.currentDestination?.id ?:0 == R.id.cardPaymentFragment -> {
+                navController.navigate(R.id.homeFragment, null,navOptions = navOptions)
+            }
+            navController.currentDestination?.id ?:0 == R.id.paymentRequestOne -> {
+                navController.navigate(R.id.homeFragment, null,navOptions = navOptions)
+            }
+            navController.currentDestination?.id ?:0 == R.id.homeFragment -> {
+                finish()
+            }
         }
+
     }
 
 

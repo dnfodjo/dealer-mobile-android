@@ -306,7 +306,44 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:hint="@string/phone"
+        android:textColorHint="@color/green"
+        app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_20sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_20sdp"
+        app:boxCornerRadiusTopStart="@dimen/_20sdp"
+        app:boxStrokeColor="@color/outer_line"
+        app:endIconDrawable="@drawable/ic_phone_call"
+        app:endIconMode="custom"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:endIconTint="@color/green"
+        app:expandedHintEnabled="true"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_layout">
 
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="345 435 453"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.button.MaterialButton
@@ -314,15 +351,15 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:backgroundTint="@color/green"
+        android:inputType="textCapWords"
         android:padding="10dp"
         android:text="@string/send_request"
-        android:inputType="textCapWords"
         android:textColor="@color/white"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/state_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/phone_layout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

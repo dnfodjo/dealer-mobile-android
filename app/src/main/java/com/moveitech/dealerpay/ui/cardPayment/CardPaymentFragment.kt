@@ -1,5 +1,4 @@
 package com.moveitech.dealerpay.ui.cardPayment
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.moveitech.dealerpay.databinding.FragmentCardPaymentBinding

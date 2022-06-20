@@ -49,7 +49,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
                 if (it)
                 {
                     loginResponse.value=false
-                    moveToNextScreen(LoginFragmentDirections.actionLoginFragmentToHomeFragment())
+//                    moveToNextScreen(LoginFragmentDirections.actionFragmentToSecondGraph())
 
                 }
             }

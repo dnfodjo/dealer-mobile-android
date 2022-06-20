@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
-    tools:context=".ui.cardPayment.CardPaymentFragment">
+    tools:context=".ui.CardPaymentFragment">
+    tools:context=".ui.CardPaymentFragment">
 
 
     <androidx.core.widget.NestedScrollView
