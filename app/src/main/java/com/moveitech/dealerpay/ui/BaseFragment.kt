@@ -45,9 +45,14 @@ abstract class BaseFragment <T: ViewBinding>:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        initViews()
         liveDataObserver()
         btnListener()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        initViews()
+
     }
 
     abstract fun  liveDataObserver()

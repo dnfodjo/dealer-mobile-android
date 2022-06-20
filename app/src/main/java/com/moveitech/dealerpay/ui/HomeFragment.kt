@@ -12,11 +12,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     override fun initViews() {
         setupRecyclerView()
-    }
-
-    override fun onResume() {
-        super.onResume()
         setDefaultUi(true, showNavigationDrawer = true, showProfilePic = true)
+
     }
 
     private fun setupRecyclerView() {
