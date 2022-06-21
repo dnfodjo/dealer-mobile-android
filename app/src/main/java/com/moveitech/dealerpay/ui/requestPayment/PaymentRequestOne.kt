@@ -1,13 +1,9 @@
-package com.moveitech.dealerpay.ui
+package com.moveitech.dealerpay.ui.requestPayment
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import com.moveitech.dealerpay.R
-import com.moveitech.dealerpay.databinding.FragmentLoginBinding
 import com.moveitech.dealerpay.databinding.FragmentPaymentRequestOneBinding
+import com.moveitech.dealerpay.ui.BaseFragment
 
 class PaymentRequestOne : BaseFragment<FragmentPaymentRequestOneBinding>() {
     override fun initViews() {
@@ -19,13 +15,14 @@ class PaymentRequestOne : BaseFragment<FragmentPaymentRequestOneBinding>() {
     ) = FragmentPaymentRequestOneBinding.inflate(layoutInflater, container, false)
 
 
-    override fun setDefaultUi() {
-    }
 
     override fun liveDataObserver() {
     }
 
     override fun btnListener() {
+        binding.btnNext.setOnClickListener {
+            moveToNextScreen(PaymentRequestOneDirections.actionPaymentRequestOneToPaymentReqTwoFragment())
+        }
     }
 
 }

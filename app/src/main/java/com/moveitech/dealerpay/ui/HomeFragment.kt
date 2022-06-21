@@ -1,31 +1,45 @@
 package com.moveitech.dealerpay.ui
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.moveitech.dealerpay.adapter.TransactionAdapter
 import com.moveitech.dealerpay.databinding.FragmentHomeBinding
-import com.moveitech.dealerpay.databinding.FragmentLoginBinding
-import com.moveitech.dealerpay.ui.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
+
     override fun initViews() {
+
+        binding.searchView.onActionViewExpanded();
+        binding.searchView.setIconified(true);
+        setDefaultUi(showProfilePic = true)
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
+
+        val list = ArrayList<String>()
+        binding.rvTransaction.apply {
+            layoutManager= LinearLayoutManager(requireContext())
+            for (i in 1..10)
+            {
+                list.add(i.toString())
+            }
+            adapter=TransactionAdapter(list)
+        }
     }
 
     override fun getFragmentBinding(
         layoutInflater: LayoutInflater,
         container: ViewGroup?
-    ) = FragmentHomeBinding.inflate(layoutInflater, container, false)
-
-
-    override fun setDefaultUi() {
-    }
+    )= FragmentHomeBinding.inflate(layoutInflater,container,false)
 
     override fun liveDataObserver() {
     }
 
     override fun btnListener() {
-    }
 
+    }
 }

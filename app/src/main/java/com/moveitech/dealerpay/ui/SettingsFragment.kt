@@ -1,16 +1,13 @@
 package com.moveitech.dealerpay.ui
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import com.moveitech.dealerpay.R
-import com.moveitech.dealerpay.databinding.FragmentLoginBinding
 import com.moveitech.dealerpay.databinding.FragmentSettingsBinding
 
 class SettingsFragment : BaseFragment<FragmentSettingsBinding>() {
     override fun initViews() {
+
+        setDefaultUi(false, showNavigationDrawer = false)
     }
 
     override fun getFragmentBinding(
@@ -19,13 +16,14 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>() {
     ) = FragmentSettingsBinding.inflate(layoutInflater, container, false)
 
 
-    override fun setDefaultUi() {
-    }
 
     override fun liveDataObserver() {
     }
 
     override fun btnListener() {
+        binding.ivBack.setOnClickListener {
+
+        }
     }
 
 }

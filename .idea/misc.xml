@@ -17,9 +17,11 @@
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/progress_dialog_layout.xml" value="0.17074275362318841" />
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/menu/nav_drawer_menu.xml" value="0.49" />
         <entry key="app/src/main/res/drawable/curve_toolbar_bg.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/textview_bg.xml" value="0.1725" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/card_payment_popup.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_card_payment.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/fragment_barcode.xml" value="0.18854166666666666" />
+        <entry key="app/src/main/res/layout/fragment_card_payment.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18854166666666666" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_paymen_request.xml" value="0.165" />
@@ -27,10 +29,10 @@
         <entry key="app/src/main/res/layout/fragment_payment_req.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_payment_request.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_payment_request_one.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_payment_two.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/fragment_payment_two.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_settings2.xml" value="0.18854166666666666" />
-        <entry key="app/src/main/res/layout/home_cards.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/home_cards.xml" value="0.165" />
         <entry key="app/src/main/res/layout/options_layout.xml" value="0.125" />
         <entry key="app/src/main/res/layout/progress_dialog_layout.xml" value="0.1" />
       </map>

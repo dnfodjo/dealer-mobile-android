@@ -4,6 +4,6 @@ class Constants {
 
     companion object
     {
-//        const val LOGIN="api/account/login"
+        const val BTN_LOGIN=1
     }
 }

@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
+    android:background="@android:color/transparent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".viewModel.PaymentFragmentTwo">
+    >
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -14,7 +14,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="35dp"
         android:hint="@string/first_name"
         android:textColorHint="@color/green"
         app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
@@ -25,8 +25,7 @@
         app:endIconDrawable="@drawable/ic_user"
         app:endIconMode="custom"
         app:endIconTint="@color/green"
-        app:expandedHintEnabled="true"
-        app:hintEnabled="true"
+        app:expandedHintEnabled="false"        app:hintEnabled="true"
         app:hintTextColor="@color/green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/last_name_layout"
@@ -52,7 +51,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="39dp"
         android:hint="@string/last_name"
         android:textColorHint="@color/green"
         app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
@@ -63,24 +61,23 @@
         app:endIconDrawable="@drawable/ic_user"
         app:endIconMode="custom"
         app:endIconTint="@color/green"
-        app:expandedHintEnabled="true"
-        app:hintEnabled="true"
+        app:expandedHintEnabled="false"        app:hintEnabled="true"
         app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/first_name_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/first_name_layout"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/first_name_layout">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-
             android:hint="Jhons"
-            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +89,7 @@
         android:layout_marginHorizontal="15dp"
         android:hint="@string/address_one"
         android:textColorHint="@color/green"
-        android:layout_marginTop="@dimen/_34sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
         app:boxCornerRadiusBottomStart="@dimen/_20sdp"
         app:boxCornerRadiusTopEnd="@dimen/_20sdp"
@@ -101,8 +98,7 @@
         app:endIconDrawable="@drawable/ic_location"
         app:endIconMode="custom"
         app:endIconTint="@color/green"
-        app:expandedHintEnabled="true"
-        app:hintEnabled="true"
+        app:expandedHintEnabled="false"        app:hintEnabled="true"
         app:hintTextColor="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
         android:hint="@string/address_two"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_29sdp"
         android:textColorHint="@color/green"
         app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
         app:boxCornerRadiusBottomStart="@dimen/_20sdp"
@@ -139,8 +135,7 @@
         app:endIconDrawable="@drawable/ic_location"
         app:endIconMode="custom"
         app:endIconTint="@color/green"
-        app:expandedHintEnabled="true"
-        app:hintEnabled="true"
+        app:expandedHintEnabled="false"        app:hintEnabled="true"
         app:hintTextColor="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -176,8 +171,7 @@
         app:endIconDrawable="@drawable/ic_location"
         app:endIconMode="custom"
         app:endIconTint="@color/green"
-        app:expandedHintEnabled="true"
-        android:layout_marginTop="@dimen/_30sdp"
+        app:expandedHintEnabled="false"        android:layout_marginTop="@dimen/_29sdp"
         app:hintEnabled="true"
         app:hintTextColor="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,8 +208,7 @@
         app:endIconMode="custom"
         android:layout_marginTop="@dimen/_30sdp"
         app:endIconTint="@color/green"
-        app:expandedHintEnabled="true"
-        app:hintEnabled="true"
+        app:expandedHintEnabled="false"        app:hintEnabled="true"
         app:hintTextColor="@color/green"
         app:layout_constraintEnd_toStartOf="@id/last_name_layout"
         app:layout_constraintStart_toStartOf="parent"
@@ -251,9 +244,9 @@
         app:boxStrokeColor="@color/outer_line"
         app:endIconMode="custom"
         app:endIconTint="@color/green"
-        app:expandedHintEnabled="true"
-        app:hintEnabled="true"
+        app:expandedHintEnabled="false"        app:hintEnabled="true"
         app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/state_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/last_name_layout"
         app:layout_constraintTop_toTopOf="@+id/state_layout">
@@ -263,22 +256,21 @@
             android:id="@+id/et_zip_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-
             android:hint="2345"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white" />
+            android:inputType="textEmailAddress"
+
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_marginHorizontal="16dp"
         android:backgroundTint="@color/green"
-        android:padding="10dp"
         android:text="@string/process_scale"
         android:textColor="@color/white"
         app:cornerRadius="20dp"

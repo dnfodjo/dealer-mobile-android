@@ -1,16 +1,13 @@
-package com.moveitech.dealerpay.ui
+package com.moveitech.dealerpay.ui.requestPayment
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import com.moveitech.dealerpay.R
-import com.moveitech.dealerpay.databinding.FragmentLoginBinding
 import com.moveitech.dealerpay.databinding.FragmentPaymenRequestTwoBinding
+import com.moveitech.dealerpay.ui.BaseFragment
 
 class PaymentReqTwoFragment : BaseFragment<FragmentPaymenRequestTwoBinding>() {
     override fun initViews() {
+        setDefaultUi(showNavigationDrawer = false, showProfilePic = false, showToolbar = true)
     }
 
     override fun getFragmentBinding(
@@ -19,8 +16,6 @@ class PaymentReqTwoFragment : BaseFragment<FragmentPaymenRequestTwoBinding>() {
     ) = FragmentPaymenRequestTwoBinding.inflate(layoutInflater, container, false)
 
 
-    override fun setDefaultUi() {
-    }
 
     override fun liveDataObserver() {
     }

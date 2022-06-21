@@ -55,7 +55,6 @@
             android:layout_height="wrap_content"
             android:text="sale"
             android:textColor="@color/white"
-            android:background=""
             android:layout_marginTop="@dimen/_5sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginLeft="@dimen/_34sdp"

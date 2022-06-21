@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
+    android:background="@android:color/transparent"
     tools:context=".ui.HomeFragment">
 
 
@@ -68,28 +68,33 @@
         app:layout_constraintStart_toEndOf="@+id/tv_requested"
         app:layout_constraintTop_toTopOf="@+id/tv_all" />
 
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        app:iconifiedByDefault="false"
+        app:closeIcon="@drawable/ic_baseline_close_24"
+        app:queryHint="@string/search_transactions"
+        android:theme="@style/ThemeOverlay.SearchView"
         app:layout_constraintTop_toBottomOf="@id/tv_all"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_10sdp"
         android:background="@drawable/search_view_bg"
         android:layout_marginTop="@dimen/_10sdp"
         app:searchIcon="@drawable/ic_baseline_search_24"
-        />
+        android:focusable="true" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_transaction"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/_10sdp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:itemCount="2"
         tools:listitem="@layout/home_cards"
         app:layout_constraintTop_toBottomOf="@+id/search_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
