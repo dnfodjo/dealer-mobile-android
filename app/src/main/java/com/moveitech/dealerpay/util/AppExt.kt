@@ -1,6 +1,7 @@
 package com.moveitech.dealerpay.util
 
 
+import android.app.Activity
 import android.content.Context
 import android.location.Address
 import android.location.Geocoder
@@ -12,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
+import androidx.navigation.NavOptions
 import com.google.android.material.snackbar.Snackbar
 import java.text.SimpleDateFormat
 import java.util.*
-
 
 
 fun View.hide()
@@ -37,6 +38,13 @@ fun Fragment.showSnackBar(message:String)
 {
     val snackbar = Snackbar
         .make(this.requireView(), message, Snackbar.LENGTH_LONG)
+    snackbar.show()}
+fun Activity.showSnackBar(message:String)
+{
+
+    val snackbar = Snackbar
+        .make(    findViewById<View>(android.R.id.content).rootView
+            , message, Snackbar.LENGTH_LONG)
     snackbar.show()}
 fun Fragment.showAlertDialog(msg: String) {
     var newMessage = msg
@@ -96,6 +104,7 @@ fun Fragment.showToolbar()
 }
 
 fun NavController.safeNavigate(direction: NavDirections) {
+
     currentDestination?.getAction(direction.actionId)?.run { navigate(direction) }
 }
 

@@ -1,12 +1,7 @@
-package com.moveitech.dealerpay.ui
-
-import android.os.Bundle
-import androidx.fragment.app.Fragment
+package com.moveitech.dealerpay.ui.cardPayment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import com.moveitech.dealerpay.databinding.FragmentCardPaymentBinding
-import com.moveitech.dealerpay.databinding.FragmentLoginBinding
 import com.moveitech.dealerpay.ui.BaseFragment
 
 class CardPaymentFragment : BaseFragment<FragmentCardPaymentBinding>() {
@@ -18,13 +13,15 @@ class CardPaymentFragment : BaseFragment<FragmentCardPaymentBinding>() {
         container: ViewGroup?
     ) = FragmentCardPaymentBinding.inflate(layoutInflater, container, false)
 
-    override fun setDefaultUi() {
-    }
+
 
     override fun liveDataObserver() {
     }
 
     override fun btnListener() {
+        binding.btnNext.setOnClickListener {
+            moveToNextScreen(CardPaymentFragmentDirections.actionCardPaymentFragmentToPaymentFragmentTwo())
+        }
     }
 
 }

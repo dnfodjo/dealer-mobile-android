@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/transparent"
     tools:context=".ui.cardPayment.CardPaymentFragment">
+    >
 
 
     <androidx.core.widget.NestedScrollView

@@ -16,6 +16,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         binding.searchView.setIconified(true);
         setDefaultUi(showProfilePic = true)
         setupRecyclerView()
+        setupRecyclerView()
+        setDefaultUi(true, showNavigationDrawer = true, showProfilePic = true)
+
     }
 
     private fun setupRecyclerView() {
@@ -40,6 +43,5 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     }
 
     override fun btnListener() {
-
     }
 }

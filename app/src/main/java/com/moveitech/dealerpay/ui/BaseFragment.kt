@@ -45,9 +45,14 @@ abstract class BaseFragment <T: ViewBinding>:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        initViews()
         liveDataObserver()
         btnListener()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        initViews()
+
     }
 
     abstract fun  liveDataObserver()
@@ -87,5 +92,10 @@ abstract class BaseFragment <T: ViewBinding>:Fragment() {
     protected fun setDefaultUi(showToolbar: Boolean = true,showNavigationDrawer:Boolean=true,showProfilePic:Boolean=false) {
 
         (requireActivity() as MainActivity).setDefaultUi(showToolbar,showNavigationDrawer,showProfilePic)
+    }
+
+    protected fun onBackPressed()
+    {
+        requireActivity().onBackPressed();
     }
 }
