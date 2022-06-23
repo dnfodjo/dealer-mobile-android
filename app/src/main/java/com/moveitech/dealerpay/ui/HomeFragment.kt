@@ -1,10 +1,13 @@
 package com.moveitech.dealerpay.ui
 
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.moveitech.dealerpay.adapter.TransactionAdapter
 import com.moveitech.dealerpay.databinding.FragmentHomeBinding
+import com.moveitech.dealerpay.util.closeKeyBoard
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -13,12 +16,15 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override fun initViews() {
 
         binding.searchView.onActionViewExpanded();
-        binding.searchView.setIconified(true);
+        binding.searchView.isIconified = true;
         setDefaultUi(showProfilePic = true)
-        setupRecyclerView()
         setupRecyclerView()
         setDefaultUi(true, showNavigationDrawer = true, showProfilePic = true)
 
+        Handler(Looper.getMainLooper()).postDelayed({
+            closeKeyBoard()
+
+        },400)
     }
 
     private fun setupRecyclerView() {

@@ -1,14 +1,9 @@
 package com.moveitech.dealerpay
 
-import android.R.attr.bitmap
-import android.graphics.drawable.BitmapDrawable
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import  android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
@@ -16,7 +11,9 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.moveitech.dealerpay.databinding.ActivityMainBinding
-import com.moveitech.dealerpay.util.ScreenShotUtil
+import com.moveitech.dealerpay.databinding.NavigationDrawerHeaderBinding
+import com.moveitech.dealerpay.util.gone
+import com.moveitech.dealerpay.util.visible
 import dagger.hilt.android.AndroidEntryPoint
 
 

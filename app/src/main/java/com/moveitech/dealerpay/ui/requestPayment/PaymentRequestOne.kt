@@ -7,6 +7,7 @@ import com.moveitech.dealerpay.ui.BaseFragment
 
 class PaymentRequestOne : BaseFragment<FragmentPaymentRequestOneBinding>() {
     override fun initViews() {
+        setDefaultUi(showProfilePic = true)
     }
 
     override fun getFragmentBinding(
