@@ -13,19 +13,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background_image"
         tools:context=".MainActivity"
-        android:background="#101426"
         android:id="@+id/parent_layout">
 
-        <ImageView
+
+
+        <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/background_image"
-            android:scaleType="fitXY"
-
+            android:background="#101426"
+            android:alpha="0.4"
             />
-
-
 
         <ImageView
             android:id="@+id/iv_logo"
@@ -71,7 +70,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/rectangle_4"
-            android:layout_width="0dp"
+            android:layout_width="500dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:layout_marginLeft="@dimen/_50sdp"

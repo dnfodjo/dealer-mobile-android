@@ -15,8 +15,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     override fun initViews() {
 
-        binding.searchView.onActionViewExpanded();
-        binding.searchView.isIconified = true;
+        binding.searchView?.onActionViewExpanded();
+        binding.searchView?.isIconified = true;
         setDefaultUi(showProfilePic = true)
         setupRecyclerView()
         setDefaultUi(true, showNavigationDrawer = true, showProfilePic = true)
@@ -30,10 +30,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private fun setupRecyclerView() {
 
         val list = ArrayList<String>()
-        binding.rvTransaction.apply {
+        binding.rvTransaction?.apply {
             layoutManager= LinearLayoutManager(requireContext())
-            for (i in 1..10)
-            {
+            for (i in 1..10) {
                 list.add(i.toString())
             }
             adapter=TransactionAdapter(list)

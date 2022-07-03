@@ -21,7 +21,7 @@ class PaymentRequestOne : BaseFragment<FragmentPaymentRequestOneBinding>() {
     }
 
     override fun btnListener() {
-        binding.btnNext.setOnClickListener {
+        binding.btnNext?.setOnClickListener {
             moveToNextScreen(PaymentRequestOneDirections.actionPaymentRequestOneToPaymentReqTwoFragment())
         }
     }

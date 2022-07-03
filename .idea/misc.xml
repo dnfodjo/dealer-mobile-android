@@ -17,24 +17,57 @@
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/progress_dialog_layout.xml" value="0.17074275362318841" />
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/menu/nav_drawer_menu.xml" value="0.49" />
         <entry key="app/src/main/res/drawable/curve_toolbar_bg.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.1765" />
+        <entry key="app/src/main/res/drawable/ic_humburger_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/textview_bg.xml" value="0.1725" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-w600dp/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-w600dp/activity_main.xml" value="0.43394561767578127" />
+        <entry key="app/src/main/res/layout-w600dp/fragment_card_payment.xml" value="0.375" />
+        <entry key="app/src/main/res/layout-w600dp/fragment_home.xml" value="0.335" />
+        <entry key="app/src/main/res/layout-w600dp/fragment_login.xml" value="0.3515625" />
+        <entry key="app/src/main/res/layout-w600dp/fragment_payment_request_one.xml" value="0.22699386503067484" />
+        <entry key="app/src/main/res/layout-w600dp/fragment_payment_request_two.xml" value="0.335" />
+        <entry key="app/src/main/res/layout-w600dp/fragment_payment_two.xml" value="0.45" />
+        <entry key="app/src/main/res/layout-w600dp/fragment_settings.xml" value="0.335" />
+        <entry key="app/src/main/res/layout-w600dp/home_cards.xml" value="0.3515625" />
+        <entry key="app/src/main/res/layout-w600dp/navigation_drawer_header.xml" value="0.2859375" />
+        <entry key="app/src/main/res/layout-w720dp-land/fragment_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-w720dp/activity_login.xml" value="0.105" />
+        <entry key="app/src/main/res/layout-w720dp/activity_main.xml" value="0.125" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_card_payment.xml" value="0.11" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_home.xml" value="0.11" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_login.xml" value="0.14140625" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_login_large.xml" value="0.25" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_payment_request_one.xml" value="0.11171171171171171" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_payment_request_two.xml" value="0.11171171171171171" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_payment_two.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-w720dp/fragment_settings.xml" value="0.11" />
+        <entry key="app/src/main/res/layout-w720dp/home_cards.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-w720dp/navigation_drawer_header.xml" value="0.2859375" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17777777777777778" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17777777777777778" />
         <entry key="app/src/main/res/layout/card_payment_popup.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_720.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/fragment_barcode.xml" value="0.18854166666666666" />
         <entry key="app/src/main/res/layout/fragment_card_payment.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_paymen_request.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_paymen_request_two.xml" value="0.18854166666666666" />
         <entry key="app/src/main/res/layout/fragment_payment_req.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_payment_request.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_payment_request_one.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_payment_two.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_payment_request_two.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_payment_two.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_settings2.xml" value="0.18854166666666666" />
         <entry key="app/src/main/res/layout/home_cards.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/navigation_drawer_header.xml" value="0.13333333333333333" />
         <entry key="app/src/main/res/layout/options_layout.xml" value="0.125" />
         <entry key="app/src/main/res/layout/progress_dialog_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/menu-w600dp/nav_drawer_menu.xml" value="0.21166666666666667" />
+        <entry key="app/src/main/res/menu-w720dp/nav_drawer_menu.xml" value="0.2859375" />
+        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.17777777777777778" />
       </map>
     </option>
   </component>
