@@ -31,9 +31,14 @@
     <string name="enter_pay_share_amount">Enter Pay Share Amount</string>
     <string name="send_via">Send Via</string>
     <string name="next">Next</string>
-
-    <string name="phone">Phone</string>
-    <string name="transaction_history">Transaction History</string>
-    <string name="card_payment">Card Payment</string>
     <string name="payment_request">Payment Request</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="phone">Phone</string>
+    <string name="card_payment">Card Payment</string>
+    <string name="select_an_item">Select an Item</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="an_item_ha_been_selected">An Item ha been Selected</string>
+    <string name="search_transactions">Search Transactions</string>
+
+
 </resources>

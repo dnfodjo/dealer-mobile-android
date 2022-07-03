@@ -15,9 +15,6 @@ class CardPaymentTwoFragment: BaseFragment<FragmentPaymentTwoBinding>(){
         container: ViewGroup?
     ) = FragmentPaymentTwoBinding.inflate(layoutInflater, container, false)
 
-
-
-
     override fun liveDataObserver() {
     }
 

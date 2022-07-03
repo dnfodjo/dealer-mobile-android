@@ -8,12 +8,12 @@ import android.location.Geocoder
 import android.location.LocationManager
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
-import androidx.navigation.NavOptions
 import com.google.android.material.snackbar.Snackbar
 import java.text.SimpleDateFormat
 import java.util.*
@@ -111,4 +111,13 @@ fun NavController.safeNavigate(direction: NavDirections) {
 fun View.preventTwoClick() {
     this.isEnabled = false
     this.postDelayed({ this.isEnabled = true }, 500)
+}
+
+fun Fragment.closeKeyBoard() {
+    val view = requireActivity().currentFocus
+    if (view != null) {
+        val inputMethodManager =
+            requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+    }
 }

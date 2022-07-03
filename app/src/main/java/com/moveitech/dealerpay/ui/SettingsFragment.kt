@@ -21,6 +21,9 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>() {
     }
 
     override fun btnListener() {
+        binding.ivBack.setOnClickListener {
+            onBackPressed()
+        }
     }
 
 }

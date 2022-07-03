@@ -13,9 +13,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/transparent"
+        android:background="@drawable/background_image"
         tools:context=".MainActivity"
         android:id="@+id/parent_layout">
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#101426"
+            android:alpha="0.4"
+            />
 
         <ImageView
             android:id="@+id/iv_logo"
@@ -26,7 +36,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <TextView
             android:id="@+id/textView"
@@ -60,15 +69,16 @@
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="@+id/textView" />
 
-
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/rectangle_4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
+            android:layout_marginLeft="@dimen/_50sdp"
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/app_theme_color_2"
             app:cardCornerRadius="20dp"
+            
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -99,8 +109,7 @@
                     app:endIconDrawable="@drawable/ic_baseline_alternate_email_24"
                     app:endIconMode="custom"
                     app:endIconTint="@color/green"
-                    app:expandedHintEnabled="true"
-                    app:hintEnabled="true"
+                    app:expandedHintEnabled="false"                    app:hintEnabled="true"
                     app:hintTextColor="@color/green"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

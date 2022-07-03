@@ -6,18 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.moveitech.dealerpay.R
-import com.moveitech.dealerpay.databinding.FragmentLoginBinding
-import com.moveitech.dealerpay.databinding.FragmentPaymenRequestTwoBinding
+import com.moveitech.dealerpay.databinding.FragmentBarcodeBinding
+import com.moveitech.dealerpay.databinding.FragmentCardPaymentBinding
 
-class PaymentReqTwoFragment : BaseFragment<FragmentPaymenRequestTwoBinding>() {
+class BarcodeFragment : BaseFragment<FragmentBarcodeBinding>() {
     override fun initViews() {
-        setDefaultUi(showNavigationDrawer = false, showProfilePic = false)
     }
 
     override fun getFragmentBinding(
         layoutInflater: LayoutInflater,
         container: ViewGroup?
-    ) = FragmentPaymenRequestTwoBinding.inflate(layoutInflater, container, false)
+    )=FragmentBarcodeBinding.inflate(layoutInflater, container, false)
 
 
 
