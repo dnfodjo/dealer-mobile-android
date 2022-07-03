@@ -18,10 +18,6 @@
             android:icon="@drawable/payment_request_icon"
             />
 
-        <item android:id="@+id/id_tech_integration"
-            android:title="Clearnet Id Tech"
-            android:icon="@drawable/payment_request_icon"
-            />
 
     </group>
 

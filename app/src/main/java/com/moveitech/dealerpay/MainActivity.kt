@@ -1,35 +1,28 @@
 package com.moveitech.dealerpay
 
 import android.Manifest
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.Gravity
-import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
-import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupWithNavController
-import com.google.android.material.navigation.NavigationView
 import com.moveitech.dealerpay.databinding.ActivityMainBinding
 import com.moveitech.dealerpay.databinding.NavigationDrawerHeaderBinding
-import com.moveitech.dealerpay.ui.PaymentInte.PaymentInteActivity
 import com.moveitech.dealerpay.util.gone
 import com.moveitech.dealerpay.util.visible
 import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
     companion object{
         const val  MY_PERMISSIONS_REQUEST_BLUETOOTH = 1
@@ -68,9 +61,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     }
 
 
-    override fun onPostCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onPostCreate(savedInstanceState, persistentState)
-    }
+
 
     private fun btnListener() {
 
@@ -107,7 +98,6 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         setupWithNavController(binding.navView, navController)
         setupWithNavController(binding.toolbar, navController, appBarConfiguration)
 
-        binding.navView.setNavigationItemSelectedListener(this)
 
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             when (destination.id) {
@@ -161,44 +151,21 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
 
 
-    override fun onBackPressed() {
-        super.onBackPressed()
 
-    }
-
-    private fun manageBackStack()
-    {
-        val navOptions: NavOptions = NavOptions.Builder()
-            .setPopUpTo(R.id.homeFragment, true)
-            .build()
-        when {
-            navController.currentDestination?.id ?:0 == R.id.cardPaymentFragment -> {
-                navController.navigate(R.id.homeFragment, null,navOptions = navOptions)
-            }
-            navController.currentDestination?.id ?:0 == R.id.paymentRequestOne -> {
-                navController.navigate(R.id.homeFragment, null,navOptions = navOptions)
-            }
-            navController.currentDestination?.id ?:0 == R.id.homeFragment -> {
-                finish()
-            }
-        }
-
-    }
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        val i = Intent()
-        when (item.itemId) {
-            R.id.id_tech_integration -> {
-                i.setClass(this, PaymentInteActivity::class.java)
-//                i.setClass(this, MainActivityIdTech::class.java)
-                startActivity(i)
-            }
-
-        }
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
-        drawerLayout.closeDrawer(GravityCompat.START)
-        return true
-    }
+//    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+//        val i = Intent()
+//        when (item.itemId) {
+//            R.id.id_tech_integration -> {
+//                i.setClass(this, PaymentInteActivity::class.java)
+////                i.setClass(this, MainActivityIdTech::class.java)
+//                startActivity(i)
+//            }
+//
+//        }
+//        val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
+//        drawerLayout.closeDrawer(GravityCompat.START)
+//        return true
+//    }
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -226,9 +193,9 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
 
 
-    fun requestPermissions() {
+    private fun requestPermissions() {
 
-        System.out.println("REQUEST PERMISSION IS CALLED")
+        println("REQUEST PERMISSION IS CALLED")
 
         // Here, thisActivity is the current activity
         if (ContextCompat.checkSelfPermission(
@@ -282,7 +249,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             } else {
                 // No explanation needed; request the permission
 
-                System.out.println("REQUEST LOCATION PERMISSION IS CALLED")
+                println("REQUEST LOCATION PERMISSION IS CALLED")
 
                 ActivityCompat.requestPermissions(
                     this, arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION),
