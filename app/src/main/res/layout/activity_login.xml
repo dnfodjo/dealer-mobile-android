@@ -14,8 +14,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        android:background="@drawable/background"
+        android:background="#101426"
         android:id="@+id/parent_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image"
+            android:alpha="0.6"
+            android:scaleType="fitXY"
+            />
 
         <ImageView
             android:id="@+id/iv_logo"
