@@ -16,4 +16,10 @@
     <color name="home_card_bg">#1A3658</color>
     <color name="grey_text">#80FFFFFF</color>
 
+    <color name="clearentGreen">#7fc62d</color>
+
+    <color name="gr_drk">#73B328</color>
+    <color name="clearentGreen_trans">#35B7FF65</color>
+    <color name="clearentBlue">#7BD1F7</color>
+
 </resources>

@@ -3,38 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/app_logo.xml" value="0.1525" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/background_round_padded.xml" value="0.1315" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/ic_app_logo.xml" value="0.1525" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/ic_baseline_alternate_email_24.xml" value="0.1395" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/ic_profile_image_placeholder.xml" value="0.1315" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/menu_background_color_state.xml" value="0.1315" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/nav_drawer_background.xml" value="0.1395" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/drawable/profile_image_placholder.xml" value="0.1315" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/fragment_login.xml" value="0.25" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/navigation_drawer_header.xml" value="0.49" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/progress_dialog_layout.xml" value="0.17074275362318841" />
-        <entry key="..\:/Umair Data/DealerPay/app/src/main/res/menu/nav_drawer_menu.xml" value="0.49" />
-        <entry key="app/src/main/res/drawable/curve_toolbar_bg.xml" value="0.118" />
-        <entry key="app/src/main/res/drawable/textview_bg.xml" value="0.1725" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/card_payment_popup.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_barcode.xml" value="0.18854166666666666" />
-        <entry key="app/src/main/res/layout/fragment_card_payment.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_paymen_request.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_paymen_request_two.xml" value="0.18854166666666666" />
-        <entry key="app/src/main/res/layout/fragment_payment_req.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_payment_request.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_payment_request_one.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_payment_two.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_settings2.xml" value="0.18854166666666666" />
-        <entry key="app/src/main/res/layout/home_cards.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/options_layout.xml" value="0.125" />
-        <entry key="app/src/main/res/layout/progress_dialog_layout.xml" value="0.1" />
+        <entry key="..\:/Umair Data/elogics project/dealer pay github/app/src/main/res/drawable/search_view_bg.xml" value="0.171" />
+        <entry key="..\:/Umair Data/elogics project/dealer pay github/app/src/main/res/menu/nav_drawer_menu.xml" value="0.1921875" />
       </map>
     </option>
   </component>
@@ -43,12 +13,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.1" />
-      </ProjectState>
-    </option>
   </component>
 </project>
