@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_configure"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_configure" />
+
+        <item
+            android:id="@+id/nav_charge"
+            android:icon="@drawable/ic_credit_card"
+            android:title="@string/menu_charge" />
+
+        <item
+            android:id="@+id/nav_bluetooth_scan"
+            android:icon="@drawable/ic_bluetooth"
+            android:title="@string/menu_bluetooth_scan"
+            android:visible="false"/>
+
+    </group>
+
+</menu>

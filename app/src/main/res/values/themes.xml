@@ -26,6 +26,7 @@
         <item name="color">@android:color/white</item>
         <item name="homeAsUpIndicator"/>
     </style>
+
     <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
         <item name="itemIconTint">?attr/colorNavigationItem</item>
         <item name="itemTextColor">?attr/colorNavigationItem</item>
@@ -49,6 +50,15 @@
         <item>Javascript</item>
         <item>Jquery</item>
     </string-array>
+
+    <style name="Theme.DealerPay.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DealerPay.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DealerPay.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>
