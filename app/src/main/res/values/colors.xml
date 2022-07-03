@@ -15,6 +15,7 @@
     <color name="yellow">#C6AC1F</color>
     <color name="home_card_bg">#1A3658</color>
     <color name="grey_text">#80FFFFFF</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#2BFFFFFF</color>
 
     <color name="clearentGreen">#7fc62d</color>
 

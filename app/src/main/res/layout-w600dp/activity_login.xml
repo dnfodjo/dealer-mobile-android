@@ -22,9 +22,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/background_image"
             android:scaleType="fitXY"
-
             />
-
 
 
         <ImageView
@@ -36,6 +34,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
 
         <TextView
             android:id="@+id/textView"
@@ -73,12 +73,11 @@
             android:id="@+id/rectangle_4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="50dp"
             android:layout_marginLeft="@dimen/_50sdp"
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/app_theme_color_2"
             app:cardCornerRadius="20dp"
-
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

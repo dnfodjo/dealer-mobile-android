@@ -55,7 +55,7 @@
         android:id="@+id/cardPaymentFragmentTwo"
         android:name="com.moveitech.dealerpay.ui.cardPayment.CardPaymentTwoFragment"
         android:label="Card Payment"
-        tools:layout="@layout/fragment_paymen_request_two" />
+        tools:layout="@layout/fragment_payment_request_two" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.moveitech.dealerpay.ui.SettingsFragment"
@@ -65,5 +65,5 @@
         android:id="@+id/paymentReqTwoFragment"
         android:name="com.moveitech.dealerpay.ui.requestPayment.PaymentReqTwoFragment"
         android:label="Payment Request"
-        tools:layout="@layout/fragment_paymen_request_two"/>
+        tools:layout="@layout/fragment_payment_request_two"/>
 </navigation>
