@@ -7,14 +7,6 @@
     android:background="@android:color/transparent"
     tools:context=".ui.HomeFragment">
 
-
-
-
-
-
-
-
-
     <TextView
         android:id="@+id/tv_all"
         android:layout_width="0dp"

@@ -16,12 +16,13 @@
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/navigation_drawer_header.xml" value="0.49" />
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/layout/progress_dialog_layout.xml" value="0.17074275362318841" />
         <entry key="..\:/Umair Data/DealerPay/app/src/main/res/menu/nav_drawer_menu.xml" value="0.49" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/ic_humburger_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/curve_toolbar_bg.xml" value="0.118" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.1765" />
         <entry key="app/src/main/res/drawable/ic_humburger_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/textview_bg.xml" value="0.1725" />
         <entry key="app/src/main/res/layout-w600dp/activity_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout-w600dp/activity_main.xml" value="0.43394561767578127" />
+        <entry key="app/src/main/res/layout-w600dp/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout-w600dp/fragment_card_payment.xml" value="0.375" />
         <entry key="app/src/main/res/layout-w600dp/fragment_home.xml" value="0.335" />
         <entry key="app/src/main/res/layout-w600dp/fragment_login.xml" value="0.3515625" />
