@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <group android:checkableBehavior="single">
+
         <item android:id="@+id/homeFragment"
             android:title="@string/transaction_history"
             android:icon="@drawable/transaction_icon"
             />
+
         <item android:id="@+id/cardPaymentFragment"
             android:title="@string/card_payment"
             android:icon="@drawable/card_payment_icon"
             />
+
         <item android:id="@+id/paymentRequestOne"
             android:title="@string/payment_request"
             android:icon="@drawable/payment_request_icon"
             />
+
 
     </group>
 

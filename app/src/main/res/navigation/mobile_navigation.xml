@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_charge">
+
+    <fragment
+        android:id="@+id/nav_configure"
+        android:name="com.moveitech.dealerpay.IDTECHPack.Fragments.IdTechSettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_id_tech_settings" />
+
+    <fragment
+        android:id="@+id/nav_charge"
+        android:name="com.moveitech.dealerpay.IDTECHPack.Fragments.IdTechPaymentFragment"
+        android:label="Pay"
+        tools:layout="@layout/fragment_id_tech_payment" />
+
+    <fragment
+        android:id="@+id/nav_bluetooth_scan"
+        android:name="com.moveitech.dealerpay.IDTECHPack.Fragments.IdTechBlutoothScanFragment"
+        android:label="@string/menu_bluetooth_scan"
+        tools:layout="@layout/fragment_id_tech_blutooth_scan" />
+</navigation>
