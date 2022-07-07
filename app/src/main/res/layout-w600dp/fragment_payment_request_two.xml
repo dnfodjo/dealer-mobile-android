@@ -367,8 +367,9 @@
                 android:layout_marginHorizontal="16dp"
                 android:backgroundTint="@color/green"
                 android:inputType="textCapWords"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="@string/send_request"
+
                 android:textColor="@color/white"
                 app:cornerRadius="20dp"
                 android:layout_marginTop="35dp"
