@@ -22,7 +22,7 @@ class PaymentReqTwoFragment : BaseFragment<FragmentPaymentRequestTwoBinding>() {
     }
 
     override fun btnListener() {
-        binding.btnSendRequest?.setOnClickListener {
+        binding.btnSendRequest.setOnClickListener {
             val intent = Intent(requireActivity(), PaymentInteActivity::class.java)
             startActivity(intent)
         }
